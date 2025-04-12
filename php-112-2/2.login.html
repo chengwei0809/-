@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <!-- 設定網頁的字元編碼為 UTF-8，確保中文能正確顯示 -->
+        <meta charset="utf-8" />
+        
+        <!-- 設定網頁的標題為「登入範例」，會顯示在瀏覽器的標籤上 -->
+        <title>登入範例</title>
+    </head>
+    <body>
+        <!-- 建立一個表單，使用 POST 方法送出資料，送出的目標是 2.login.php -->
+        <form method="post" action="2.login.php">
+            
+            <!-- 帳號輸入欄位，使用文字輸入框，name 設為 "id"，便於伺服器接收資料 -->
+            帳號：<input type="text" name="id"><br />
+
+            <!-- 密碼輸入欄位，使用密碼輸入框，輸入時文字會被遮蔽，name 設為 "pwd" -->
+            密碼：<input type="password" name="pwd"><p></p>
+
+            <!-- 提交按鈕，點擊後會將表單資料送出 -->
+            <input type="submit" value="登入"> 
+
+            <!-- 重設按鈕，點擊後會清除輸入的資料 -->
+            <input type="reset" value="清除">
+        </form>
+    </body>
+</html>
